@@ -1,0 +1,37 @@
+2026-11-11 14:23:57 [main] INFO  tiempos - Operacion=buscarClientePorId | origen=MongoDB | resultado=encontrado | tiempoMs=1794425037176
+2026-11-11 14:28:08 [main] INFO  tiempos - Operacion=buscarClientePorId | origen=MongoDB | resultado=encontrado | tiempoMs=1794425288537
+2026-11-11 14:29:07 [main] INFO  tiempos - Operacion=buscarClientePorId | origen=MongoDB | resultado=encontrado | tiempoMs=1794425347369
+2026-11-11 18:25:24 [http-nio-8080-exec-1] INFO  tiempos - Tiempo de ejecucion 132034100ns | operacion=solicitudApi | metodo=GET | ruta=/api/inventory | resultado=exito | estado=200
+2026-11-11 18:25:24 [http-nio-8080-exec-2] INFO  tiempos - Tiempo de ejecucion 132034100ns | operacion=solicitudApi | metodo=GET | ruta=/api/session | resultado=exito | estado=200
+2026-11-11 18:25:24 [http-nio-8080-exec-3] INFO  tiempos - Tiempo de ejecucion 5900400ns | operacion=solicitudApi | metodo=GET | ruta=/api/queues | resultado=exito | estado=200
+2026-11-11 18:43:10 [http-nio-8080-exec-8] INFO  tiempos - Tiempo de ejecucion 734743900ns | operacion=solicitudApi | metodo=POST | ruta=/api/auth | resultado=exito | estado=200
+2026-11-11 18:43:47 [http-nio-8080-exec-5] INFO  tiempos - Tiempo de ejecucion 587983400ns | operacion=guardarCliente | origen=MongoDB | resultado=exito
+2026-11-11 18:43:47 [http-nio-8080-exec-5] INFO  tiempos - Tiempo de ejecucion 601236200ns | operacion=solicitudApi | metodo=POST | ruta=/api/clients | resultado=exito | estado=200
+2026-11-11 18:44:14 [http-nio-8080-exec-6] INFO  tiempos - Tiempo de ejecucion 92439700ns | operacion=buscarClientePorId | origen=MongoDB | resultado=encontrado
+2026-11-11 18:44:14 [http-nio-8080-exec-6] INFO  tiempos - Tiempo de ejecucion 96845000ns | operacion=solicitudApi | metodo=GET | ruta=/api/clients/{id} | resultado=exito | estado=200
+2026-11-11 18:44:44 [http-nio-8080-exec-7] INFO  tiempos - Tiempo de ejecucion 9505700ns | operacion=solicitudApi | metodo=POST | ruta=/api/cars | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-4] INFO  tiempos - Tiempo de ejecucion 5021554300ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-9] INFO  tiempos - Tiempo de ejecucion 2103110000ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-2] INFO  tiempos - Tiempo de ejecucion 1216692700ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-10] INFO  tiempos - Tiempo de ejecucion 1223339700ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-1] INFO  tiempos - Tiempo de ejecucion 1155469300ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-3] INFO  tiempos - Tiempo de ejecucion 1015814000ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-8] INFO  tiempos - Tiempo de ejecucion 32757100ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-5] INFO  tiempos - Tiempo de ejecucion 28243700ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-6] INFO  tiempos - Tiempo de ejecucion 25216100ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-7] INFO  tiempos - Tiempo de ejecucion 23814700ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:44:52 [http-nio-8080-exec-4] INFO  tiempos - Tiempo de ejecucion 24507500ns | operacion=solicitudApi | metodo=POST | ruta=/api/inventory/load | resultado=exito | estado=200
+2026-11-11 18:45:35 [http-nio-8080-exec-9] INFO  tiempos - Tiempo de ejecucion 11055800ns | operacion=solicitudApi | metodo=POST | ruta=/api/repairs | resultado=exito | estado=200
+2026-11-11 18:45:35 [http-nio-8080-exec-2] INFO  tiempos - Tiempo de ejecucion 1463500ns | operacion=solicitudApi | metodo=GET | ruta=/api/inventory | resultado=exito | estado=200
+2026-11-11 18:45:35 [http-nio-8080-exec-10] INFO  tiempos - Tiempo de ejecucion 966400ns | operacion=solicitudApi | metodo=GET | ruta=/api/queues | resultado=exito | estado=200
+2026-11-11 18:46:06 [http-nio-8080-exec-1] INFO  tiempos - Tiempo de ejecucion 12788800ns | operacion=solicitudApi | metodo=POST | ruta=/api/clients | resultado=error | estado=400
+2026-11-11 18:46:12 [http-nio-8080-exec-3] INFO  tiempos - Tiempo de ejecucion 2754700ns | operacion=solicitudApi | metodo=POST | ruta=/api/clients | resultado=exito | estado=200
+2026-11-11 18:46:35 [http-nio-8080-exec-8] INFO  tiempos - Tiempo de ejecucion 1450200ns | operacion=solicitudApi | metodo=POST | ruta=/api/cars | resultado=exito | estado=200
+2026-11-11 18:47:06 [http-nio-8080-exec-5] INFO  tiempos - Tiempo de ejecucion 3466600ns | operacion=solicitudApi | metodo=POST | ruta=/api/repairs | resultado=exito | estado=200
+2026-11-11 18:47:06 [http-nio-8080-exec-6] INFO  tiempos - Tiempo de ejecucion 876200ns | operacion=solicitudApi | metodo=GET | ruta=/api/inventory | resultado=exito | estado=200
+2026-11-11 18:47:06 [http-nio-8080-exec-7] INFO  tiempos - Tiempo de ejecucion 801900ns | operacion=solicitudApi | metodo=GET | ruta=/api/queues | resultado=exito | estado=200
+2026-11-11 18:47:20 [http-nio-8080-exec-4] INFO  tiempos - Tiempo de ejecucion 8336100ns | operacion=solicitudApi | metodo=POST | ruta=/api/maintenance | resultado=exito | estado=200
+2026-11-11 18:47:39 [http-nio-8080-exec-9] INFO  tiempos - Tiempo de ejecucion 11789400ns | operacion=solicitudApi | metodo=POST | ruta=/api/payments | resultado=exito | estado=200
+2026-11-11 18:47:42 [http-nio-8080-exec-2] INFO  tiempos - Tiempo de ejecucion 722219000ns | operacion=solicitudApi | metodo=POST | ruta=/api/invoices | resultado=exito | estado=200
+2026-11-11 18:47:42 [http-nio-8080-exec-10] INFO  tiempos - Tiempo de ejecucion 954500ns | operacion=solicitudApi | metodo=GET | ruta=/api/queues | resultado=exito | estado=200
+2026-11-11 18:47:49 [http-nio-8080-exec-1] INFO  tiempos - Tiempo de ejecucion 103953500ns | operacion=solicitudApi | metodo=GET | ruta=/api/invoices/paid | resultado=exito | estado=200

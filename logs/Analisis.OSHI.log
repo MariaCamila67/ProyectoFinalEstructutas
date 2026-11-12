@@ -1,0 +1,8 @@
+2026-11-11 17:20:18 [main] INFO  OSHI - Memoria JVM | usada: 21.19 MB | asignada: 60.00 MB | máxima: 3916.00 MB | uso: 35.32%
+2026-11-11 17:20:18 [main] INFO  OSHI - Memoria física | usada: 15178.97 MB | total: 15658.94 MB | disponible: 479.96 MB
+2026-11-11 17:22:58 [main] INFO  OSHI - Memoria JVM | usada: 21.32 MB | asignada: 60.00 MB | máxima: 3916.00 MB | uso: 35.54%
+2026-11-11 17:22:58 [main] INFO  OSHI - Memoria física | usada: 13159.80 MB | total: 15658.94 MB | disponible: 2499.14 MB
+2026-11-11 18:24:01 [main] INFO  OSHI - Memoria JVM | usada: 39.84 MB | asignada: 60.00 MB | máxima: 3916.00 MB | uso: 66.40%
+2026-11-11 18:24:01 [main] INFO  OSHI - Memoria física | usada: 12323.39 MB | total: 15658.94 MB | disponible: 3335.55 MB
+2026-11-11 18:47:42 [http-nio-8080-exec-2] INFO  OSHI - Memoria JVM | usada: 30.99 MB | asignada: 60.00 MB | máxima: 3916.00 MB | uso: 51.65%
+2026-11-11 18:47:42 [http-nio-8080-exec-2] INFO  OSHI - Memoria física | usada: 13643.88 MB | total: 15658.94 MB | disponible: 2015.05 MB

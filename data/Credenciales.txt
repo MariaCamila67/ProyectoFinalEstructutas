@@ -1,0 +1,3 @@
+﻿123456|Juan Torres|3001234567|Mecanico|juan123
+123457|Pedro Lopez|3001234568|Electricista|pedro456
+123458|Carlos Ramirez|3009876543|Pintura|carlos789

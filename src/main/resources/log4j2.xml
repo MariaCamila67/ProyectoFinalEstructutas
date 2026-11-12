@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="Log4j2Config">
+
+    <!-- Variables reutilizables para la configuración -->
+    <Properties>
+        <!-- Carpeta donde se almacenarán los archivos de log -->
+        <Property name="app_log_root">logs</Property>
+        <!-- Formato de cada mensaje de log -->
+        <Property name="log_pattern">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Property>
+
+        <!-- Nombre base del archivo de log -->
+        <Property name="log">Analisis</Property>
+        <Property name="tiempos">Analisis.tiempos</Property>
+        <Property name="JOL">Analisis.JOL</Property>
+        <Property name="OSHI">Analisis.OSHI</Property>
+
+
+
+    </Properties>
+
+    <!-- Destinos donde se escribirán los mensajes -->
+    <Appenders>
+        <!-- Muestra los logs en la consola -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${log_pattern}"/>
+        </Console>
+
+        <!-- Guarda los logs en un archivo y los rota cuando sea necesario -->
+        <RollingFile name="FileLogger"
+                     fileName="${app_log_root}/${log}.log"
+                     filePattern="${app_log_root}/${log}-%d{yyyy-MM-dd}-%i.log.gz"
+                     append="true">
+            <PatternLayout pattern="${log_pattern}"/>
+            <!-- Reglas para rotar el archivo -->
+            <Policies>
+                <!-- Rota el archivo cada día -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- Rota el archivo cuando supera 100 MB -->
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <!-- Mantiene hasta 7 archivos rotados -->
+            <DefaultRolloverStrategy max="7"/>
+        </RollingFile>
+
+        <RollingFile name="FileLoggerJOL"
+                     fileName="${app_log_root}/${JOL}.log"
+                     filePattern="${app_log_root}/${JOL}-%d{yyyy-MM-dd}-%i.log.gz"
+                     append="true">
+            <PatternLayout pattern="${log_pattern}"/>
+            <!-- Reglas para rotar el archivo -->
+            <Policies>
+                <!-- Rota el archivo cada día -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- Rota el archivo cuando supera 100 MB -->
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <!-- Mantiene hasta 7 archivos rotados -->
+            <DefaultRolloverStrategy max="7"/>
+        </RollingFile>
+
+        <RollingFile name="FileLoggerOSHI"
+                     fileName="${app_log_root}/${OSHI}.log"
+                     filePattern="${app_log_root}/${OSHI}-%d{yyyy-MM-dd}-%i.log.gz"
+                     append="true">
+            <PatternLayout pattern="${log_pattern}"/>
+            <!-- Reglas para rotar el archivo -->
+            <Policies>
+                <!-- Rota el archivo cada día -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- Rota el archivo cuando supera 100 MB -->
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <!-- Mantiene hasta 7 archivos rotados -->
+            <DefaultRolloverStrategy max="7"/>
+        </RollingFile>
+
+
+
+        <RollingFile name="FileLoggerTiempos"
+                     fileName="${app_log_root}/${tiempos}.log"
+                     filePattern="${app_log_root}/${tiempos}-%d{yyyy-MM-dd}-%i.log.gz"
+                     append="true">
+            <PatternLayout pattern="${log_pattern}"/>
+            <!-- Reglas para rotar el archivo -->
+            <Policies>
+                <!-- Rota el archivo cada día -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- Rota el archivo cuando supera 100 MB -->
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <!-- Mantiene hasta 7 archivos rotados -->
+            <DefaultRolloverStrategy max="7"/>
+        </RollingFile>
+
+
+    </Appenders>
+
+    <!-- Define qué mensajes se registran y a dónde van -->
+    <Loggers>
+        <!-- Logger raíz: aplica a toda la aplicación -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+
+        <!-- Logger específico para el paquete com.example -->
+        <Logger name="com.example" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+
+        <Logger name="tiempos" level="debug" additivity="false">
+            <AppenderRef ref="FileLoggerTiempos"/>
+        </Logger>
+
+        <Logger name="JOL" level="debug" additivity="false">
+            <AppenderRef ref="FileLoggerJOL"/>
+        </Logger>
+
+        <Logger name="OSHI" level="debug" additivity="false">
+            <AppenderRef ref="FileLoggerOSHI"/>
+        </Logger>
+
+
+
+    </Loggers>
+</Configuration>
